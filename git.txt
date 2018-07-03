@@ -1,0 +1,15 @@
+git：
+	git init: 创建git
+	git add readme.txt: 将文件添加到git库
+	git commit -m "wrote a readme file": 将文件提交到仓库
+		提交后出现的内容：
+		[master (root-commit) f039029] wrote a readme file
+		 1 file changed, 2 insertions(+)
+		 create mode 100644 readme.txt
+		 
+		 git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容
+		 git commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）。
+
+	
+	git status:查看当前仓库状态
+	git diff:查看修改内容
