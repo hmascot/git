@@ -13,7 +13,9 @@ git：
 	
 	git status:查看当前仓库状态
 	git diff:查看修改内容(git add 之后查看不了内容)
-	git diff HEAD -- readme.txt：查看某一个本修改的文件夹
+	git diff HEAD -- readme.txt：查看某一个修改的文件夹
 	git reset --hard HEAD^:删除版本
 	git reset --hard d13955:还原删除的版本
 	git reflog:用来记录每一次的命令
+	git checkout -- <file>：把在工作区的修改撤销
+	git reset HEAD <file>：把暂存区的修改撤销掉（unstage），重新放回工作区
