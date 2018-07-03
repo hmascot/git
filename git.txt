@@ -11,6 +11,7 @@ git：
 		 git commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）。
 
 	
+时光穿梭机
 	git status:查看当前仓库状态
 	git diff:查看修改内容(git add 之后查看不了内容)
 	git diff HEAD -- readme.txt：查看某一个修改的文件夹
@@ -19,3 +20,35 @@ git：
 	git reflog:用来记录每一次的命令
 	git checkout -- <file>：把在工作区的修改撤销
 	git reset HEAD <file>：把暂存区的修改撤销掉（unstage），重新放回工作区
+	rm test.txt:删除文件管理器中的文件
+	git rm test.txt：删除版本库文件
+	
+	
+远程仓库
+	git remote add origin git@github.com:hmascot/git.git:关联一个远程库
+	git push -u origin master:第一次推送master分支的所有内容
+	git push origin master:推送最新修改
+	git remote rm origin:删除远程仓库
+	
+	error: failed to push some refs to 'git@github.com:hmascot/homework.git'解决方法 ==> git pull --rebase origin master:
+	
+
+分支管理
+	git clone git@github.com:hmascot/02dom.git:从远程库上面clone一个本地库
+
+	查看分支：git branch
+
+	创建分支：git branch <name>
+
+	切换分支：git checkout <name>
+
+	创建+切换分支：git checkout -b <name>
+
+	合并某分支到当前分支：git merge <name>
+
+	删除分支：git branch -d <name>
+	
+	查看分支合并图:git log --graph
+
+	
+	git remote add origin git@github.com:hmascot/bolyShopWeb.git
