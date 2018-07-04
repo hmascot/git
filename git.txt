@@ -49,6 +49,3 @@ git：
 	删除分支：git branch -d <name>
 	
 	查看分支合并图:git log --graph
-
-	
-	git remote add origin git@github.com:hmascot/bolyShopWeb.git
